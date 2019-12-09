@@ -1,0 +1,59 @@
+@mixin absolute {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@mixin absolute-content {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+@mixin marker {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -15px;
+    width: 5px;
+    height: 5px;
+   // background-color: $pallete-marker;
+}
+
+@mixin button-hover {
+    &:hover,
+    &:focus {
+       // color: $pallete-background-secondary;
+       // background-color: $pallete-accent-hover;
+    }
+}
+
+@mixin menu-hover {
+    &:hover,
+    &:focus {
+        position: relative;
+        &::before {
+            content: "";
+            top: 130%;
+            width: 4px;
+            height: 4px;
+            //background: $pallete-menu-text;
+            @include absolute;
+        }
+    }
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @error "Не указано значение для `#{$breakpoint}`. "
+         + "Пожалуйста, убедитесь, что точка остановки объявлена в карте `$breakpoints`.";
+  }
+}

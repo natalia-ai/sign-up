@@ -1,0 +1,14 @@
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__inner {
+        width: 100%;
+        max-width: 800px;
+        background: $pallete-background-page;
+        @include respond-to("medium") {
+            display: block;
+        }
+    }
+    
+}

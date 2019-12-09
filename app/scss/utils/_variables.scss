@@ -1,0 +1,35 @@
+$breakpoints: (
+  "mobile":                   (max-width: 275px),
+  "medium-s":                 (max-width: 509px),
+  "medium":                   (max-width: 647px)
+);
+
+
+$color-white: #fff;
+$color-concrete: #f2f2f2;
+
+
+$color-black: #000;
+$color-cod-gray: #111;
+$color-boulder: #7c7c7c;
+
+$color-royal-blue: #5a61ed;
+
+$pallete-text: $color-black;
+$pallete-text-form: $color-cod-gray;
+$pallete-label: $color-boulder;
+
+$pallete-background-form: $color-white;
+$pallete-background-page: $color-concrete;
+
+$pallete-accent: $color-royal-blue;
+
+
+$font-size: 14px;
+$font-size--login: 0.929em;
+$font-size--label: 0.857em;
+$font-size--h1: 3.500em;
+$font-size--h2: 1.571em;
+
+$font-family-sans: 'PT Sans', arial;
+$font-family-work-sans: 'Work Sans', sans-serif;

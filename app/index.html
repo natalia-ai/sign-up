@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Login signup</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body class="page">
+  <div class="page__inner">
+    <main class="main-content">
+      <section class="main-content__header header">
+        <h1 class="header__title">Sign up</h1>
+      </section>
+      <section class="main-content__form form">
+        <h2 class="form__title">New user?</h2>
+        <p class="form__description">Use the form below to create your account.</p>
+        <form method="POST" action="">
+          <p class="form__block">
+            <label class="form__label" for="first-name">First Name</label>
+            <input class="form__input" id="first-name" type="text" placeholder="Alice">
+            <label class="form__label" for="last-name">Last Name</label>
+            <input class="form__input" id="last-name" type="text" placeholder="Miller">
+          </p>
+          <p class="form__block">
+            <label class="form__label" for="nationality">Nationality</label>
+            <select class="form__select" id="nationality">
+              <option value="russian">Russian</option>
+              <option value="american" selected>American</option>
+              <option value="czekh">Czekh</option>
+              <option value="greek">Greek</option>
+              <option value="afghanistan">Afghanistan</option>
+              <option value="estonian">Estonian</option>
+            </select>
+            <label class="form__label form__label-right" for="e-mail">E-mail</label>
+            <input class="form__input form__input-right" id="e-mail" type="e-mail" placeholder="alice.miller@yahoo.com"
+              required>
+          </p>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend">Date of Birth</legend>
+              <select class="form__select form__select-day" name="day" id="day"></select>
+              <select class="form__select form__select-month" name="month" id="month"></select>
+              <select class="form__select form__select-year" name="year" id="year"></select>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend class="form__legend form__legend-right">Gender</legend>
+              <input class="form__input-radio" name="male" id="male" type="radio">
+              <label class="form__label-radio" for="male">Male</label>
+              <input class="form__input-radio" name="male" id="female" type="radio" checked>
+              <label class="form__label-radio" for="female">Female</label>
+            </fieldset>
+          <p class="form__block form__block-password">
+            <label class="form__label form__label-password" for="password">Password</label>
+            <input class="form__input form__input-password" id="password" name="password" type="password"
+              placeholder="●●●●●●●●●●●●●" required>
+            <label class="form__label form__label-password" for="confirm-password">Confirm
+              Password</label>
+            <input class="form__input form__input-password" id="confirm-password"
+              name="confirm-password" type="password" placeholder="●●●●●●●●●●●●●" required>
+          </p>
+          <p class="form__block">
+            <span class="form__login-text">Have an account?</span>
+            <a class="form__login-link" href="#">Login</a>
+          </p>
+          <p class="form__block">
+          <button class="form__button" type="submit">Complete Signup</button>
+        </p>
+        </form>
+
+        <!--END OF FOOTER-->
+        <script src="js/date.js"></script>
+</body>
+
+</html>
